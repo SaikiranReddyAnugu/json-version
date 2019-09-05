@@ -1,0 +1,59 @@
+<html><head>      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css"></head>
+<body>
+    <div class="align">
+    <input type="button" value="+ Add Image" onclick="formDis()" id="button">
+</div>
+    <div id="formDisplay" style="display:none">
+    <form class="formStyle" name="imageForm" id="imageForm" onsubmit="return(addImage());">
+            <div class="row">
+                    <div class="col-25">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="name" name="name" placeholder="Image Name.." required>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-25">
+                          <label for="url">URL</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="url" name="url" placeholder="Enter URL.." required>
+                        </div>
+                      </div>
+                          <div class="row">
+                                <div class="col-25">
+                                  <label for="information">Description</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="information" name="information" placeholder="Write information.." required>
+                                </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-25">
+                                      <label for="uploadDate">Upload Date</label>
+                                    </div>
+                                    <div class="col-75">
+                                      <input type="Date" id="uploadDate" name="uploadDate" placeholder="Upload Date.." required>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                        <input type="submit" value="Submit" id="button" >
+                                     
+
+                    <input type="button" class="edit" value="Edit" id="button" onclick="editImage()"> </div>
+
+        </form></div>
+     
+    <div  class="container">
+        <ul id="rig">
+
+        </ul>
+  
+</div>
+</body>
+
+</html>
